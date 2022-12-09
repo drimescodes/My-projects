@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(218, 18%, 12%);
+  width: 30%;
+  min-width: 305px;
+  max-width: 375px;
+  border-radius: 20px;
+  padding: 2em;
+  
+}
+
+.star-icon {
+  background-color: hsl(213, 19%, 18%);
+  align-self: flex-start;
+  border-radius: 50px;
+  padding: 7px;
+  margin-bottom: 1em;
+}
+
+.star-icon img {
+}
+
+.rating-text {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.rating-text p:nth-child(1) {
+  font-size: 24px;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+  color: white;
+}
+
+.rating-text p:nth-child(2) {
+  color: hsl(216, 12%, 54%);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.number-ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(216, 12%, 54%);
+  width: 100%;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+}
+
+.number-ratings > div {
+  background-color: hsl(213, 19%, 18%);
+  /* Either This  */
+  border-radius: 50%;
+  padding: 1em;
+  /* Or This  */
+  clip-path: circle();
+}
+
+.number-ratings > div:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+ 
+}
+
+.number-ratings > div:active {
+  background-color: hsl(217, 12%, 63%);
+}
+
+
+.number-ratings > div:visited{
+    background-color: hsl(217, 12%, 63%);
+  }
+  
+/* .submit-button{
+    display: block;
+   text-align: center;
+    width:100%;
+    background-color:hsl(25, 97%, 53%) ;
+    border:none;
+    cursor: pointer;
+    border-radius:30px;
+    padding: .5em;
+    color: white;
+} */
+
+
+.submit-button{
+  display: block;
+   font-weight:200;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+    width:100%;
+    background-color:hsl(25, 97%, 53%) ;
+    border:none;
+    cursor: pointer;
+    border-radius:30px;
+    padding: .5em;
+    color: white;
+    
+}
+
+.submit-button:hover{
+    background-color:white ;
+    color:hsl(25, 97%, 53%) ;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  
+            
+}
+
+
+
+
